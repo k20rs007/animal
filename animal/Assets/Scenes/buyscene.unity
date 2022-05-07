@@ -347,6 +347,7 @@ MonoBehaviour:
   checkPanel: {fileID: 494485759}
   noPanel: {fileID: 1269530386}
   buy_se: {fileID: 8300000, guid: a096e9a1ae1d9c14182e6d1189530f57, type: 3}
+  audioSource: {fileID: 187974580}
 --- !u!114 &187974577
 MonoBehaviour:
   m_ObjectHideFlags: 0

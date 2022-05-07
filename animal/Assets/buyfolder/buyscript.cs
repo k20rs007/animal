@@ -9,7 +9,7 @@ public class buyscript : MonoBehaviour
     [SerializeField] GameObject noPanel;
 
     public AudioClip buy_se;
-    AudioSource audioSource;
+    [SerializeField] AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +56,7 @@ public class buyscript : MonoBehaviour
             GManager.instance.coin -= 100;
             GManager.instance.houselevel++;
         }
-        //audioSource.PlayOneShot(buy_se);
+        audioSource.PlayOneShot(buy_se);
         checkPanel.SetActive(false);
     }
 
