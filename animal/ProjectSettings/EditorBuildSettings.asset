@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Field.unity
+    guid: e1419b5a5b3a7b24d82f571d68533198
+  - enabled: 0
+    path: Assets/Scenes/river.unity
+    guid: 68bac469654f91f49848e7268f4b8d15
+  - enabled: 0
+    path: Assets/Scenes/tree.unity
+    guid: 1eaf66433305c6046bedb37c9fa5993d
+  - enabled: 1
+    path: Assets/Scenes/fishScene.unity
+    guid: f9f5b951c9682734eaaa2c534263d996
+  - enabled: 1
+    path: Assets/Scenes/catchScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/buyscene.unity
+    guid: 94f331c934c844d43b600c7c0dcd79cf
+  m_configObjects: {}
