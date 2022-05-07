@@ -21,6 +21,7 @@ public class KirikabuScript : MonoBehaviour
     [SerializeField] GameObject kabutomusiImage;
     [SerializeField] GameObject kirakiraImage;
     [SerializeField] GameObject toFieldButton;
+    [SerializeField] GameObject honeyPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -107,6 +108,10 @@ public class KirikabuScript : MonoBehaviour
             GManager.instance.honey = false;
             kirakiraImage.SetActive(true);
 
+        } else if(GManager.instance.honey == false)
+        {
+            honeyPanel.SetActive(true);
+            StartCoroutine("wait");
         }
 
     }
@@ -120,5 +125,12 @@ public class KirikabuScript : MonoBehaviour
         kabutomusiImage.SetActive(false);
         GManager.instance.coin += mushi_coin;
         toFieldButton.SetActive(true);
+    }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(1);
+        honeyPanel.SetActive(false);
+        yield break;
     }
 }
